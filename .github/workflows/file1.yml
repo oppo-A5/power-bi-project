@@ -14,7 +14,7 @@ jobs:
       - name: Install Power BI CLI
         run: |
           # Install Power BI CLI using npm
-          npm install -g powerbi-cli
+          npm i -g @powerbi-cli/powerbi-cli
 
       - name: Build Power BI report
         run: |
