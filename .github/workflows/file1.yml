@@ -1,0 +1,17 @@
+name: Power BI Report Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Power BI CLI
+        run: |
+          # Install Power BI CLI using npm
+          npm install -g powerbi-cli
