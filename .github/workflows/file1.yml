@@ -19,7 +19,7 @@ jobs:
       - name: Build Power BI report
         run: |
           # Path to your Power BI report file
-          REPORT_FILE= "./First Report.pbix"
-          chmod +x "./First Report.pbix"
+          REPORT_FILE= "./First_Report.pbix"
+          chmod +x "./First_Report.pbix"
           # Build the Power BI report
-          pbi import -f ./First Report.pbix -t "Datasets/Details.csv" -m "firstReport"
+          pbi import -f ./First_Report.pbix -t "Datasets/Details.csv" -m "firstReport"
