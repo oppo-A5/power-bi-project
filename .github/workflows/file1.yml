@@ -15,10 +15,3 @@ jobs:
         run: |
           # Install Power BI CLI using npm
           npm i -g @powerbi-cli/powerbi-cli
-
-      - name: Build Power BI report
-        run: |
-          # Path to your Power BI report file
-          REPORT_FILE="./First Report.pbix"
-          # Build the Power BI report
-          pbi import -f $REPORT_FILE -t "Datasets/Details.csv" -m "firstReport"
